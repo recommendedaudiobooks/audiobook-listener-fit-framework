@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Audiobook Listener-Fit Record",
+  "description": "Schema for a structured audiobook quality, listening-profile, listener-fit, and evidence-confidence record.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "title",
+    "author"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "illustrative_only": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "narrators": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "format": {
+      "type": "string"
+    },
+    "recommendation_dna": {
+      "type": "object",
+      "properties": {
+        "quality_score": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 10
+        },
+        "scale": {
+          "const": "0-10"
+        },
+        "quality_dimensions": {
+          "type": "object",
+          "properties": {
+            "narration_quality": {
+              "$ref": "#/$defs/score"
+            },
+            "story_quality": {
+              "$ref": "#/$defs/score"
+            },
+            "character_development": {
+              "$ref": "#/$defs/score"
+            },
+            "emotional_impact": {
+              "$ref": "#/$defs/score"
+            },
+            "audio_production": {
+              "$ref": "#/$defs/score"
+            },
+            "originality": {
+              "$ref": "#/$defs/score"
+            },
+            "replay_value": {
+              "$ref": "#/$defs/score"
+            },
+            "world_building": {
+              "$ref": "#/$defs/score"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "listening_profile": {
+      "type": "object",
+      "properties": {
+        "story_pacing": {
+          "$ref": "#/$defs/trait"
+        },
+        "complexity": {
+          "$ref": "#/$defs/trait"
+        },
+        "attention_demand": {
+          "$ref": "#/$defs/trait"
+        },
+        "accessibility": {
+          "$ref": "#/$defs/trait"
+        },
+        "immersion": {
+          "$ref": "#/$defs/trait"
+        },
+        "humor": {
+          "$ref": "#/$defs/trait"
+        },
+        "romance": {
+          "$ref": "#/$defs/trait"
+        },
+        "emotional_intensity": {
+          "$ref": "#/$defs/trait"
+        },
+        "technical_detail": {
+          "$ref": "#/$defs/trait"
+        }
+      },
+      "additionalProperties": false
+    },
+    "listener_fit": {
+      "type": "object",
+      "properties": {
+        "commute": {
+          "$ref": "#/$defs/fit"
+        },
+        "road_trip": {
+          "$ref": "#/$defs/fit"
+        },
+        "workout": {
+          "$ref": "#/$defs/fit"
+        },
+        "bedtime": {
+          "$ref": "#
