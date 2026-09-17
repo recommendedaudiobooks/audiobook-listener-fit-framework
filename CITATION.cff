@@ -19,4 +19,6 @@ abstract: "An open framework for describing audiobook quality, listening charact
 
 repository-code: "https://github.com/recommendedaudiobooks/audiobook-listener-fit-framework"
 
+version: 1.0.0
 doi: 10.5281/zenodo.22815435
+date-released: 2026-09-17
