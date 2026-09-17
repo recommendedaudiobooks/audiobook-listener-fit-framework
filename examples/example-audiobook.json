@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "illustrative_only": true,
+  "title": "Example Audiobook",
+  "author": "Example Author",
+  "narrators": [
+    "Example Narrator"
+  ],
+  "format": "unabridged",
+  "recommendation_dna": {
+    "quality_score": 8.27,
+    "scale": "0-10",
+    "quality_dimensions": {
+      "narration_quality": 8.8,
+      "story_quality": 8.2,
+      "character_development": 8.0,
+      "emotional_impact": 8.5,
+      "audio_production": 8.7,
+      "originality": 7.9,
+      "replay_value": 7.6,
+      "world_building": 8.1
+    }
+  },
+  "listening_profile": {
+    "story_pacing": "high",
+    "complexity": "moderate",
+    "attention_demand": "moderate",
+    "accessibility": "high",
+    "immersion": "high",
+    "humor": "low",
+    "romance": "low",
+    "emotional_intensity": "high",
+    "technical_detail": "low"
+  },
+  "listener_fit": {
+    "commute": "high",
+    "road_trip": "high",
+    "workout": "moderate",
+    "bedtime": "low",
+    "focused_listening": "high",
+    "background_friendly": "low"
+  },
+  "evidence": {
+    "confidence": "moderate",
+    "recording_specific_evidence": true,
+    "notes": "Fictional example for demonstrating the data structure only."
+  }
+}
