@@ -46,5 +46,16 @@ The example records in this repository are fictional and are provided only to de
 
 ## License
 
+## Citation and DOI
+
+The Audiobook Listener-Fit Framework is archived on Zenodo and has a persistent Digital Object Identifier (DOI).
+
+**DOI:** [10.5281/zenodo.22815435](https://doi.org/10.5281/zenodo.22815435)
+
+If you use or reference this framework, please cite the archived Zenodo release or use the citation information provided by GitHub.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22815435.svg)](https://doi.org/10.5281/zenodo.22815435)
+
+
 This repository is released under the MIT License. See [`LICENSE`](LICENSE).
 
