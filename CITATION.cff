@@ -16,3 +16,5 @@ keywords:
 - Recommendation DNA
 - audiobook metadata
 abstract: "An open framework for describing audiobook quality, listening characteristics, evidence confidence, and listener fit, derived from the Recommendation DNA methodology developed by Recommended Audiobooks."
+
+repository-code: "https://github.com/YOUR-USERNAME/audiobook-listener-fit-framework"
